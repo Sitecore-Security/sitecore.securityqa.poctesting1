@@ -2,7 +2,7 @@ name: Binary Ready - Veracode Static Code Analysis
 
 run-name: Binary Ready - Static Code Analysis - ${{ github.event.client_payload.repository.name }}
 
-on: push
+on:
   repository_dispatch:
     types: [binary-ready-veracode-sast-pipeline-scan]
 
